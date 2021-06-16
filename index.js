@@ -1,29 +1,70 @@
+// function wakeDog(dogName, dogBreed) {
+//     return (`Wake ${dogName} the ${dogBreed}`);
+// }
+
+// function leashDog(dogName, dogBreed) {
+//     return (`Leash ${dogName} the ${dogBreed}`);
+// }
+
+// function walkToPark(dogName, dogBreed) {
+//     return (`Walk to the park with ${dogName} the ${dogBreed}`);
+// }
+
+// function throwFrisbee(dogName, dogBreed) {
+//     return (`Throw the frisbee for ${dogName} the ${dogBreed}`);
+// }
+
+// function walkHome(dogName, dogBreed) {
+//     return (`Walk home with ${dogName} the ${dogBreed}`);
+// }
+
+// function unleashDog(dogName, dogBreed) {
+//     return (`Unleash ${dogName} the ${dogBreed}`);
+// }
+
+// var routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
+
+// function exerciseDog(name, breed) {
+//     return routine.map(x => x(name, breed))
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function wakeDog(dogName, dogBreed) {
-    return (`Wake ${dogName} the ${dogBreed}`);
+    return(`Wake ${dogName} the ${dogBreed}`);
 }
-
 function leashDog(dogName, dogBreed) {
-    return (`Leash ${dogName} the ${dogBreed}`);
+    return(`Leash ${dogName} the ${dogBreed}`);
 }
-
 function walkToPark(dogName, dogBreed) {
-    return (`Walk to the park with ${dogName} the ${dogBreed}`);
+    return(`Walk to the park with ${dogName} the ${dogBreed}`);
 }
-
 function throwFrisbee(dogName, dogBreed) {
-    return (`Throw the frisbee for ${dogName} the ${dogBreed}`);
+    return(`Throw the frisbee for ${dogName} the ${dogBreed}`);
 }
-
 function walkHome(dogName, dogBreed) {
-    return (`Walk home with ${dogName} the ${dogBreed}`);
+    return(`Walk home with ${dogName} the ${dogBreed}`);
 }
-
 function unleashDog(dogName, dogBreed) {
-    return (`Unleash ${dogName} the ${dogBreed}`);
+    return(`Unleash ${dogName} the ${dogBreed}`);
 }
 
-var routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
+const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
-function exerciseDog(name, breed) {
-    return routine.map(x => x(name, breed))
+function exerciseDog(dogName, dogBreed){
+    return routine.map(element => element(dogName, dogBreed))
 }
